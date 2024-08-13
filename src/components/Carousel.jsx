@@ -1,7 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
 import '../styles/Carousel.css'; // Ensure the path is correct
-import Reveal from '../Reveal';
 
 const Carousel = () => {
   const settings = {

@@ -72,3 +72,30 @@ img {
   font-style: 'Poppins';
   background-color: #f5f3ef;
 }
+
+
+.benefits {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: 'Poppins';
+}
+
+.benefits p {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: 'Poppins';
+}
+
+.benefits ul {
+  list-style-type: disc; /* Add bullet points to the list */
+  margin-left: 20px; /* Add space on the left of the list */
+}
+
+.benefits ul li {
+  margin-bottom: 8px; /* Add space between list items */
+}
+
+.benefits p:last-of-type {
+  font-size: 0.9em; /* Adjust font size of the last paragraph if needed */
+  font-style: italic; /* Optional: italicize the last paragraph for emphasis */
+}
