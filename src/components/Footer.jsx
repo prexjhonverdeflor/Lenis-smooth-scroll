@@ -7,7 +7,7 @@ import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 const Footer = () => {
   const { ref: footerRef, inView: footerInView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.3,
   });
 
   // Animation variants
