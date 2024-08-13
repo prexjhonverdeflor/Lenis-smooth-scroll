@@ -1,0 +1,64 @@
+.process-container {
+  display: flex;
+  flex-direction: column; /* Align sections vertically */
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Full viewport height */
+  text-align: center; /* Center text inside the sections */
+  position: relative;
+  overflow: hidden;
+  background-image: url('/public/img/bg.jpg'); /* Path to your background image */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.process-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+  z-index: 0; /* Place it behind the text and images */
+}
+
+.header {
+  font-size: 2rem; /* Font size for the header */
+  color: white; /* Ensure text is visible on background */
+  z-index: 1; /* Ensure the text is above the background */
+  position: relative; /* Make sure header is not affected by parallax */
+}
+
+.process-row {
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.process-item {
+  line-height: 30px;
+  font-weight: 900;
+  font-size: 15px;
+  color: white;
+  z-index: 99;
+  flex: 1 1 20%; /* Adjust the basis percentage to control the width of items */
+  min-width: 150px; /* Minimum width for each item */
+  text-align: center;
+  position: relative; /* Required for the pseudo-element */
+  padding-right: 20px; /* Space between text and line */
+}
+
+.process-item::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 2px; /* Thickness of the line */
+  background-color: white; /* Color of the line */
+  position: absolute;
+  top: 0; /* Position the line at the top */
+  right: 0; /* Position the line at the right */
+}

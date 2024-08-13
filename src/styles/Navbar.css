@@ -1,0 +1,56 @@
+.navbar {
+  width: 100%;
+  position: fixed; /* Keeps navbar at the top */
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensure it's above other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.navbar-logo img {
+  width: 150px;
+  display: block;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin-right: 70px;
+}
+
+.navbar-links li {
+  margin: 0 20px;
+}
+
+.navbar-links a {
+  position: relative; /* Position the link relative to its normal position */
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.4s ease;
+  font-family: "Syncopate", sans-serif;
+  line-height: 50px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.navbar-links a::after {
+  content: ""; /* Create an empty element */
+  margin-bottom: -5px;
+  position: absolute; /* Position it absolutely within the link */
+  left: 0;
+  bottom: 0; /* Align it with the bottom of the link */
+  width: 100%; /* Make it as wide as the link */
+  height: 1.5px; /* Set the height of the underline */
+  background-color: #f3f3f3; /* Color of the underline */
+  transform: scaleX(0); /* Hide the underline initially */
+  transform-origin: left; /* Scale the underline from the left */
+  transition: transform 0.4s ease; /* Smooth transition effect */
+}
+
+.navbar-links a:hover::after {
+  transform: scaleX(1); /* Scale the underline to full width on hover */
+}

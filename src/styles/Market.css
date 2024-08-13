@@ -1,0 +1,45 @@
+.market-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Adjust the ratio as needed */
+  gap: 20px; /* Space between heading and columns */
+  padding:0 150px;
+  margin-bottom: 100px;
+}
+
+.market-heading {
+  grid-column: 1; /* Heading takes up the first column */
+  font-size: 40px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the heading bold */
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.heading-description {
+  line-height: normal;
+  font-family: 'Poppins';
+  font-size: 18px;
+}
+
+
+.content {
+  grid-column: 2; /* Content takes up the second column */
+  display: grid;
+  grid-template-rows: repeat(3, auto); /* Three rows with automatic height */
+  gap: 30px; /* Space between rows */
+}
+
+.column {
+  padding:0 100px; /* Padding inside columns */
+}
+
+.column-header {
+  font-size: 20px; /* Font size for headers */
+  margin-bottom: 5px; /* Space between header and description */
+  text-transform: uppercase;
+}
+
+.column-description {
+  font-size: 18px; /* Font size for descriptions */
+  line-height: normal;
+  font-family: 'Poppins';
+}

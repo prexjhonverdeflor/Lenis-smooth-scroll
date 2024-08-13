@@ -1,0 +1,104 @@
+@import url(https://db.onlinewebfonts.com/c/e9d9ecf545e95474ea2fc6bfb69554fc?family=Maharlika+Regular);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syncopate&family=Syne:wght@400..800&family=Tenor+Sans&display=swap');
+
+
+
+.hero-container {
+  background-image: url("/public/img/home-bg.png");
+  height: 100vh;
+  font-size: 25px; /* Removed the extra space */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Syncopate", sans-serif;
+  font-weight: 900;
+  letter-spacing: 3px;
+
+}
+
+.hero-container h1 {
+  text-align: center;
+  padding:0 350px;
+  z-index: 99;
+  font-size: 55px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+h5 {
+  font-size:17px;
+  margin-bottom: 0px;
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 99;
+  letter-spacing: 1px;
+}
+
+
+.center-line {
+  display: block;
+  width: 35%;
+  margin: 0 auto;
+  z-index: 99;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between the buttons */
+}
+
+.hero-button {
+  padding: 10px 40px;
+  border: 2px solid #f5f3ef; /* Border color matching the background */
+  background-color: #f5f3ef; /* White background by default */
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.5s; /* Transition for smooth effect */
+  font-family: 'Poppins';
+  text-transform: uppercase; /* Optional: match Bootstrap text style */
+}
+
+.hero-button:hover {
+  background-color: transparent; /* Transparent background on hover */
+  color: rgb(255, 255, 255); /* Text color remains the same */
+  border-color: rgb(255, 255, 255); /* Change border color on hover */
+}
+
+.scroll-button {
+  position: absolute;
+  bottom: 0px; /* Adjust as needed */
+  transform: translateX(-50%);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 80%;
+  transition: color 0.4s ease;
+  animation: bounce 1.5s infinite; /* Apply bounce animation */
+}
+
+.scroll-button:hover {
+  color: #b1b1b1; /* Change color on hover */
+}
+
+.scroll-button svg {
+  font-size: 24px; /* Adjust size of the icon */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px); /* Reduced bounce height */
+  }
+  60% {
+    transform: translateY(-5px); /* Adjusted secondary bounce height */
+  }
+}

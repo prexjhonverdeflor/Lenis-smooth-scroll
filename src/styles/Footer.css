@@ -1,0 +1,152 @@
+.footer {
+  background-color: #f5f3ef;
+  padding:70px 130px 100px;
+
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  max-width: 60%;
+  line-height: normal;
+}
+
+
+.footer-left p{
+  max-width: 80%;
+  line-height: normal;
+  font-family: 'Poppins';
+}
+
+.footer-left .bold{
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+
+
+
+.social-icons {
+  display: flex; /* Align icons in a row */
+  gap: 35px; /* Space between icons */
+  margin-top: 50px; /* Space above icons */
+}
+
+.social-icon {
+  color: #333; /* Icon color */
+  font-size: 24px; /* Adjust size as needed */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icon:hover {
+  color: #000000; /* Change color on hover */
+}
+
+
+
+
+
+.footer-right {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the start (left) */
+  gap: 15px; /* Space between items */
+}
+
+.footer-right h2 {
+  font-size: 24px; /* Larger, prominent font for the heading */
+  margin: 0; /* Remove default margin */
+}
+
+.footer-right p {
+  font-size: 16px; /* Slightly larger font for readability */
+  margin: 0; /* Remove default margin */
+  font-family: 'Poppins';
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.footer-input {
+  padding: 12px 0; /* Vertical padding only for a line-like appearance */
+  width: 100%;
+  border: none; /* Remove default border */
+  border-bottom: 2px solid #ccc; /* Line-like border at the bottom */
+  border-radius: 0; /* Remove rounded corners */
+  box-shadow: none; /* Remove shadow for a cleaner look */
+  font-size: 16px; /* Font size */
+  color: #333; /* Text color */
+  background-color: transparent; /* Transparent background */
+  transition: border-bottom 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.footer-input:focus {
+  outline: none;
+  border-bottom: 2px solid #313131; /* Change border color on focus */
+  color: #464646; /* Change text color on focus */
+}
+
+
+.footer-button {
+  padding: 10px 40px;
+  border: 2px solid #3e3e3e; /* Border color matching the background */
+  background-color: #3e3e3e; /* White background by default */
+  color: rgb(255, 255, 255); /* Text color */
+  font-size: 15px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.5s; /* Transition for smooth effect */
+  font-family: 'Poppins', sans-serif; /* Font family */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+.footer-button:hover {
+  background-color: transparent; /* Transparent background on hover */
+  color: #3e3e3e; /* Text color changes to white */
+  border-color: #3e3e3e; /* Border color changes to white on hover */
+}
+
+
+
+.footer-checkbox-group {
+  display: flex;
+  align-items: center; /* Center align checkbox and text vertically */
+  gap: 10px; /* Space between checkbox and text */
+  font-family: 'Poppins';
+  line-height: normal;
+}
+
+.footer-checkbox {
+  width: 16px; /* Adjust size as needed */
+  height: 16px; /* Adjust size as needed */
+  margin-top: -120px;
+}
+
+.footer-checkbox-label {
+  font-size: 12px; /* Adjust font size as needed */
+  margin: 0; /* Remove default margin */
+
+}
+
+.logo-group {
+  display: flex; /* Align images in a row */
+  justify-content: space-around; /* Distribute space evenly */
+  align-items: center; /* Center images vertically */
+  gap: 50px; /* Space between images */
+}
+
+.logo-image {
+  margin-top: 50px;
+  width: 40px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.logo-image3 {
+  margin-left: -20px;
+  margin-top: 50px;
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}

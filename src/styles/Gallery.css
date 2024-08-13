@@ -1,0 +1,74 @@
+.gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between gallery items */
+}
+
+.gallery-container1,
+.gallery-container2
+ {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Create two equal columns */
+  align-items: center; /* Center content vertically */
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+.gallery-container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Create two equal columns */
+  align-items: center; /* Center content vertically */
+}
+
+.gallery-container2 {
+  grid-template-columns: 1fr 1fr; /* Same as .gallery-container1 */
+  grid-template-areas: "image text"; /* Default layout: image on left, text on right */
+}
+
+.gallery-container1 {
+  grid-template-areas: "text image"; /* Reversed layout: text on left, image on right */
+}
+
+.gallery-container3 {
+  grid-template-areas: "text image"; /* Reversed layout: text on left, image on right */
+}
+
+.image-container {
+  grid-area: image;
+}
+
+.text-container {
+  grid-area: text;
+  padding: 100px; /* Adjust padding as needed */
+}
+
+
+
+.text-container h1 {
+  font-size: 45px;
+  text-transform:uppercase;
+}
+
+.text-container p {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: 'Poppins';
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.text-container button {
+  color: rgb(0, 0, 0);
+  padding: 0;
+  border: none;
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 17px; /* Font size */
+  font-style: 'Poppins';
+  background-color: #f5f3ef;
+}

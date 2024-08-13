@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Syncopate&family=Syne:wght@400..800&family=Tenor+Sans&display=swap');
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  background-color: #f5f3ef;
+  padding-bottom: 130px;
+}
+
+.services-header {
+  margin-bottom: 70px;
+  font-size: 32px;
+  font-family: "Syncopate", sans-serif;
+  font-weight: 900;
+  line-height: 50px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: rgb(66, 66, 66);
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-item {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  overflow: hidden; /* Ensure content doesn't overflow */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.service-item:hover {
+  transform: scale(1.05); /* Optional: Slightly enlarge the image item on hover */
+}
+
+.service-image {
+  width: 100%;
+  max-width: 400px; /* Adjust size as needed */
+  height: auto;
+  object-fit: cover;
+  transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+}
+
+.service-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Black overlay with 30% opacity */
+  opacity: 0; /* Start with invisible overlay */
+  transition: opacity 0.3s ease; /* Smooth transition for overlay visibility */
+  z-index: 1; /* Ensure the overlay is above the image but below the text */
+}
+
+.service-item:hover::after {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.service-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Adjust text color to ensure it's readable on the image */
+  font-size: 25px;
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  z-index: 99;
+}
+
+.service-item:hover .service-text {
+  transform: translate(-50%, -100%); /* Move text up slightly on hover */
+}

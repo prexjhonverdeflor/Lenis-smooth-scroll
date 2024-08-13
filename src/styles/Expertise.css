@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.expertise-container {
+  padding: 100px 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with proportional widths */
+  align-items: center; /* Center items vertically */
+  background-color: #ebebeb;
+}
+
+h1 {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-size: 23px;
+}
+
+.text-section {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-section ul {
+  list-style-type: disc; /* Bullet points */
+  padding-right: 20px; /* Add some space on the right side */
+  font-size: 18px;
+}
+
+.text-section li {
+  margin-bottom: 10px; /* Space between each list item */
+}
+
+.expertise-carousel { /* Updated class name */
+  width: 100%; /* Adjust to fit within the grid column */
+  max-width: 700px; /* Set a max-width if needed */
+}
+
+.image-section img {
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  max-width: 100%; /* Prevent overflow */
+  height: auto; /* Maintain aspect ratio */
+}
