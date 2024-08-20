@@ -12,21 +12,27 @@ import Market from './components/Market';
 import Carousel from './components/Carousel';
 import Footer from './components/Footer';
 
+import { ReactLenis } from '@studio-freight/react-lenis';
+import Lenis from './Lenis';
+
+
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Hero />
-      <Services/>
-      <Process/>
-      <Expertise/>
-      <Buy/>
-      <Gallery/>
-      <Marquee/>
-      <Market/>
-      <Carousel/>
-      <Footer/>
+      <ReactLenis root options={{ lerp: 0.1 }}>
+        <Navbar />
+        <Hero />
+        <Services />
+        <Process />
+        <Expertise />
+        <Buy />
+        <Gallery />
+        <Marquee />
+        <Market />
+        <Carousel />
+        <Footer />
+      </ReactLenis>
     </BrowserRouter>
   );
 }

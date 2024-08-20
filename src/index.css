@@ -6,7 +6,7 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 
-body {
+html, body {
   margin: 0;
   font-family: "Syncopate", sans-serif;
   font-weight: 400;
@@ -14,10 +14,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f5f3ef;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 
