@@ -13,7 +13,6 @@ import Carousel from './components/Carousel';
 import Footer from './components/Footer';
 
 import { ReactLenis } from '@studio-freight/react-lenis';
-import Lenis from './Lenis';
 
 
 
