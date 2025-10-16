@@ -44,7 +44,7 @@ const Market = () => {
         <motion.div className="column" variants={contentVariants}>
           <h3 className="column-header">Local Exposure</h3>
           <p className="column-description">
-            Through our partnership with Nextdoor, the private online social network now used in over 80% of U.S. neighborhoods and virtually all Bay Area neighborhoods, we make sure your home receives targeted local exposure. When you list your home with Hansen Partners it will automatically appear on Nextdoor in your neighborhood.
+            Through our partnership with Nextdoor, the private online social network now used in over 80% of U.S. neighborhoods and virtually all Bay Area neighborhoods, we make sure your home receives targeted local exposure. When you list your home with Sample Company it will automatically appear on Nextdoor in your neighborhood.
           </p>
         </motion.div>
 

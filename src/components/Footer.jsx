@@ -53,14 +53,14 @@ const Footer = () => {
           className="footer-left"
           variants={leftSectionVariants}
         >
-          <h2>JULIE HANSEN PARTNERSHIP</h2>
-          <p>An elite group of the East Bay’s most talented and visionary real estate professionals believed buyers and sellers deserved more from their real estate company. More service. More resources. More integrity. More global reach. In a word, more of everything people should expect when they buy or sell their homes.</p>
+          <h2>SAMPLE WEBSITE TITLE</h2>
+          <p>This is a broad description for a practice website, showcasing a fictional company's commitment to quality service and resources.</p>
           <p className='bold'>ADDRESS:</p>
           <p>4733 Chabot Drive #100 Pleasanton, CA 94588</p>
           <p className='bold'>CONTACT INFO:</p>
           <p>(925) 553-6707</p>
-          <p>luxuryhomesinwc@icloud.com</p>
-          <p>Julie Hansen-Orvis | CA DRE# 00934447</p>
+          <p>sample@example.com</p>
+          <p>Sample Website Title | SAMPLE LICENSE #12345678</p>
 
           <motion.div
             className="social-icons"
@@ -104,7 +104,7 @@ const Footer = () => {
               className="footer-checkbox"
             />
             <label htmlFor="subscribe-checkbox" className="footer-checkbox-label">
-              By providing Julie Hansen Partnership your contact information, you acknowledge and agree to our Privacy Policy and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn’t necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.
+              By providing Sample Website Title your contact information, you acknowledge and agree to our Privacy Policy and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn’t necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.
             </label>
           </div>
           <button className="footer-button">Subscribe</button>
@@ -115,7 +115,6 @@ const Footer = () => {
           >
             <img src='/img/logo1.png' alt='Logo 1' className='logo-image' />
             <img src='/img/logo2.png' alt='Logo 2' className='logo-image' />
-            <img src='/img/logo4.png' alt='Logo 3' className='logo-image3' />
           </motion.div>
         </motion.div>
       </motion.div>
