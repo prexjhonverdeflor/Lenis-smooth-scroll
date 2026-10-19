@@ -27,7 +27,7 @@ const Expertise = () => {
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 1 }}
       >
-        <h1>MY STAGING EXPERTISE</h1>
+        <h1>OUR STAGING EXPERTISE</h1>
         <ul>
           <li>Unclutter and organize your home</li>
           <li>Neatly arrange drawers and cabinets</li>

@@ -26,7 +26,7 @@ const Market = () => {
         <p className="heading-description">
           Our Online Marketing Strategy
           <br />
-          The Bay Area remains one of the world's most sought-after regions to live in, and when looking to sell, it is vital that your home be marketed online to audiences locally, nationally, and internationally.
+          Metro Manila remains one of the Philippines' most sought-after regions to live in, and when looking to sell or rent, it is vital that your home be marketed online to audiences locally, nationally, and internationally.
         </p>
       </motion.div>
 
@@ -40,21 +40,21 @@ const Market = () => {
         <motion.div className="column" variants={contentVariants}>
           <h3 className="column-header">Local Exposure</h3>
           <p className="column-description">
-            Through our partnership with Nextdoor, the private online social network now used in over 80% of U.S. neighborhoods and virtually all Bay Area neighborhoods, we make sure your home receives targeted local exposure. When you list your home with Sample Company it will automatically appear on Nextdoor in your neighborhood.
+            Your listing is presented to buyers and renters searching in Makati City, Metro Manila, and the surrounding cities, so your property receives targeted local exposure. When you list your home with Aurelle Estates, it reaches the people already looking in your neighborhood.
           </p>
         </motion.div>
 
         <motion.div className="column" variants={contentVariants}>
           <h3 className="column-header">National Exposure</h3>
           <p className="column-description">
-            We secure strategic positioning and enhancement on Realtor.com, Trulia, and Zillow, driving more consumers to your home and increasing exposure. We will receive every inquiry about your property directly.
+            We secure strong placement for your property on the leading online real estate portals and search platforms used across the Philippines, driving more buyers and renters to your home and increasing exposure. We will receive every inquiry about your property directly.
           </p>
         </motion.div>
 
         <motion.div className="column" variants={contentVariants}>
           <h3 className="column-header">International Exposure</h3>
           <p className="column-description">
-            To expose your luxury listing to millions of potential homebuyers worldwide, we promote on prominent international real estate portals, including: Wall Street Journal, LuxuryPortfolio.com, LuxuryRealEstate.com, LeadingRE.com, UniqueHomes.com, China.apr.com, Caimeiju, Juwai, Country Life UK
+            To expose your listing to potential homebuyers and investors worldwide, we promote your property on prominent international real estate portals, reaching overseas Filipinos and foreign buyers searching for homes, condominiums, and premium properties in the Philippines.
           </p>
         </motion.div>
       </motion.div>

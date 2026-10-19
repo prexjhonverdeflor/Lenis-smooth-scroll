@@ -24,7 +24,7 @@ const Navbar = () => {
     >
       <div className="navbar-logo">
         <a href="#hero" onClick={(e) => {e.preventDefault(); handleScroll('#hero');}}>
-          <img src="/img/logo.png" alt="Logo" />
+          <img src="/img/logo.png" alt="Aurelle Estates" />
         </a>
       </div>
 

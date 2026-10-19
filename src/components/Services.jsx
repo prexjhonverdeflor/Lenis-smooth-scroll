@@ -21,15 +21,14 @@ const Services = () => {
   return (
     <div className="services-container">
       <Reveal width="100%" duration={0.8} initialOpacity={0} initialY={50}>
-        <h1 className="services-header">COMPREHENSIVE MARKETING PLAN</h1>
+        <h1 className="services-header">OUR SERVICES</h1>
       </Reveal>
       <div className="images-container">
-        <ServiceItem src="/img/1.png" alt="Service 1" text="RESPONSIVE" index={0} />
-        <ServiceItem src="/img/222.png" alt="Service 22" text="SYNDICATION" index={1} />
-        <ServiceItem src="/img/3.png" alt="Service 3" text="VIRTUAL TOUR" index={2} />
-        <ServiceItem src="/img/4.png" alt="Service 4" text="PHOTOGRAPHY" index={3} />
-        <ServiceItem src="/img/5.png" alt="Service 5" text="DECOR GUIDANCE" index={4} />
-        <ServiceItem src="/img/6.png" alt="Service 6" text="INTENTIONAL LAYOUT" index={5} />
+        <ServiceItem src="/img/1.png" alt="Residential Property Sales" text="RESIDENTIAL SALES" index={0} />
+        <ServiceItem src="/img/222.png" alt="Condominium Sales" text="CONDOMINIUM SALES" index={1} />
+        <ServiceItem src="/img/3.png" alt="Property Rentals" text="PROPERTY RENTALS" index={2} />
+        <ServiceItem src="/img/4.png" alt="Real Estate Investment" text="REAL ESTATE INVESTMENT" index={3} />
+        <ServiceItem src="/img/5.png" alt="Property Consultation" text="PROPERTY CONSULTATION" index={4} />
       </div>
     </div>
   );

@@ -48,26 +48,30 @@ const Footer = () => {
           className="footer-left"
           variants={leftSectionVariants}
         >
-          <h2>SAMPLE WEBSITE TITLE</h2>
-          <p>This is a broad description for a practice website, showcasing a fictional company's commitment to quality service and resources.</p>
+          <h2>AURELLE ESTATES</h2>
+          <p>Find Your Place in the World. Aurelle Estates is a real estate company specializing in residential properties, condominiums, and premium homes, serving clients from Makati City, Metro Manila, Philippines.</p>
           <p className='bold'>ADDRESS:</p>
-          <p>4733 Chabot Drive #100 Pleasanton, CA 94588</p>
+          <p>25th Floor, Aurelle Tower, Makati City, Philippines</p>
           <p className='bold'>CONTACT INFO:</p>
-          <p>(925) 553-6707</p>
-          <p>sample@example.com</p>
-          <p>Sample Website Title | SAMPLE LICENSE #12345678</p>
+          <p>+63 917 000 1234</p>
+          <p>hello@aurelleestates.example</p>
+          <p className='bold'>BUSINESS HOURS:</p>
+          <p>Monday–Friday: 9:00 AM–6:00 PM</p>
+          <p>Saturday: 9:00 AM–1:00 PM</p>
+          <p>Sunday: Closed</p>
+          <p>Aurelle Estates | Established 2018 | Makati City, Metro Manila</p>
 
           <motion.div
             className="social-icons"
             variants={socialIconsVariants}
           >
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon" title="Aurelle Estates on Facebook" aria-label="Aurelle Estates on Facebook">
               <FaFacebookF />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon" title="Aurelle Estates on LinkedIn" aria-label="Aurelle Estates on LinkedIn">
               <FaLinkedinIn />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon" title="@aurelleestates on Instagram" aria-label="Aurelle Estates on Instagram">
               <FaInstagram />
             </a>
           </motion.div>
@@ -99,7 +103,7 @@ const Footer = () => {
               className="footer-checkbox"
             />
             <label htmlFor="subscribe-checkbox" className="footer-checkbox-label">
-              By providing Sample Website Title your contact information, you acknowledge and agree to our Privacy Policy and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn’t necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.
+              By providing Aurelle Estates your contact information, you acknowledge and agree to our Privacy Policy and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn’t necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.
             </label>
           </div>
           <button className="footer-button">Subscribe</button>

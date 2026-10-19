@@ -30,7 +30,7 @@ const Hero = () => {
             <motion.h5
                 variants={heroTextVariants}
             >
-                our services
+                Aurelle Estates
             </motion.h5>
             <motion.hr
                 className='center-line'
@@ -39,7 +39,7 @@ const Hero = () => {
             <motion.h1
                 variants={heroTextVariants}
             >
-                Let us help you find your dream home.
+                Find Your Place in the World.
             </motion.h1>
             <motion.div
                 className="button-container"

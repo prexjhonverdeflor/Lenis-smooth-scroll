@@ -19,20 +19,20 @@ const Carousel = () => {
         <div className="slide">
           <img src="/img/bg2.png" alt="Slide 1" />
           <div className="text-overlay">
-            <h2 className="heading">Leading Real Estate Companies of The World® & Luxury Portfolio International</h2>
-            <p className="description">JRockcliff is a founding member of Luxury Portfolio International®, the luxury division of Leading Real Estate Companies of the World®. </p>
+            <h2 className="heading">Find Your Place in the World</h2>
+            <p className="description">Aurelle Estates is a real estate company specializing in residential properties, condominiums, and premium homes, helping individuals, families, and investors find properties that suit their lifestyles and goals. </p>
             <div className="text-row">
               <div className="text-item">
-                <p className="additional-info">500</p>
-                <p className="additional-text">member firms</p>
+                <p className="additional-info">2018</p>
+                <p className="additional-text">year founded</p>
               </div>
               <div className="text-item">
-                <p className="additional-info">50</p>
-                <p className="additional-text">buyers</p>
+                <p className="additional-info">5</p>
+                <p className="additional-text">real estate services</p>
               </div>
               <div className="text-item">
-                <p className="additional-info">50</p>
-                <p className="additional-text">investors</p>
+                <p className="additional-info">Makati</p>
+                <p className="additional-text">Metro Manila, Philippines</p>
               </div>
             </div>
           </div>
@@ -40,20 +40,20 @@ const Carousel = () => {
         <div className="slide">
           <img src="/img/bg1.png" alt="Slide 2" />
           <div className="text-overlay">
-            <h2 className="heading">WE ARE GLOBAL</h2>
-            <p className="description">Through our international affiliations, we have a strong presence in over 50 countries. We also have several well-positioned affiliate offices in China, providing our clients with access to buyers in Hong Kong, Shanghai, and Beijing.</p>
+            <h2 className="heading">Property Services for Every Goal</h2>
+            <p className="description">From residential property sales and condominium sales to property rentals, real estate investment, and property consultation, our team guides you through every step of your real estate journey in the Philippines.</p>
             <div className="text-row">
               <div className="text-item">
-                <p className="additional-info">50</p>
-                <p className="additional-text">countries</p>
+                <p className="additional-info">Sales</p>
+                <p className="additional-text">residential &amp; condominium</p>
               </div>
               <div className="text-item">
-                <p className="additional-info">$70M</p>
-                <p className="additional-text">potential buyer</p>
+                <p className="additional-info">Rentals</p>
+                <p className="additional-text">properties for every lifestyle</p>
               </div>
               <div className="text-item">
-                <p className="additional-info">50</p>
-                <p className="additional-text">investors</p>
+                <p className="additional-info">Advice</p>
+                <p className="additional-text">investment &amp; consultation</p>
               </div>
             </div>
           </div>
