@@ -25,7 +25,7 @@ const MarqueeComponent = () => {
             <img
               key={index}
               src={src}
-              alt={`Marquee Image ${index}`}
+              alt={`Showcase property ${index + 1}`}
               className="marquee-image"
             />
           ))}

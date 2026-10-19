@@ -1,5 +1,4 @@
 // src/animations.js
-import { motion } from 'framer-motion';
 
 // src/animations.js
 export const navbarVariants = {
