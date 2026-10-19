@@ -62,3 +62,43 @@
   top: 0; /* Position the line at the top */
   right: 0; /* Position the line at the right */
 }
+
+/* Stack + auto height up to tablet so content never gets clipped horizontally */
+@media (max-width: 1024px) {
+  .process-container {
+    height: auto;
+    min-height: 70vh;
+    padding: 60px 20px;
+  }
+
+  .header {
+    font-size: 1.4rem;
+  }
+
+  .process-row {
+    flex-direction: column;
+    padding: 40px 30px;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .process-item {
+    min-width: unset;
+    padding-right: 0;
+    padding-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .process-item::after {
+    height: 1px;
+    width: 60%;
+    top: auto;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .process-item:last-child::after {
+    display: none;
+  }
+}

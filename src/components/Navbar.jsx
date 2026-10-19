@@ -1,14 +1,17 @@
 // src/components/Navbar.js
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { navbarVariants, linkVariants } from '../animation.js';
 import { useLenis } from '@studio-freight/react-lenis';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
-  const lenis = useLenis(); // Get the Lenis instance
+  const lenis = useLenis();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleScroll = (target) => {
+    setMenuOpen(false);
     lenis.scrollTo(target);
   };
 
@@ -25,8 +28,28 @@ const Navbar = () => {
         </a>
       </div>
 
+      <button
+        className="navbar-toggle"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle menu"
+      >
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </button>
+
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            className="navbar-overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setMenuOpen(false)}
+          />
+        )}
+      </AnimatePresence>
+
       <motion.ul
-        className="navbar-links"
+        className={`navbar-links ${menuOpen ? 'open' : ''}`}
         initial="hidden"
         animate="visible"
         variants={navbarVariants}

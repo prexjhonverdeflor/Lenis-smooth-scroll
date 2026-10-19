@@ -1,15 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 import '../styles/Footer.css'; // Import your CSS file for styling
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
-  const { ref: footerRef, inView: footerInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.3,
-  });
-
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -42,12 +36,13 @@ const Footer = () => {
   };
 
   return (
-    <footer id='footer' className="footer" ref={footerRef}>
+    <footer id='footer' className="footer">
       <motion.div
         className="footer-row"
         variants={containerVariants}
         initial="hidden"
-        animate={footerInView ? "visible" : "hidden"}
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
       >
         <motion.div
           className="footer-left"

@@ -81,3 +81,61 @@
 .service-item:hover .service-text {
   transform: translate(-50%, -100%); /* Move text up slightly on hover */
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .services-container {
+    padding: 80px 40px;
+    padding-bottom: 100px;
+  }
+
+  .services-header {
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .services-container {
+    padding: 60px 20px;
+    padding-bottom: 80px;
+  }
+
+  .services-header {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+  }
+
+  .service-item {
+    margin: 10px;
+  }
+
+  .service-image {
+    max-width: 300px;
+  }
+
+  .service-text {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-header {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+  }
+
+  .service-image {
+    max-width: 260px;
+  }
+
+  .service-text {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}

@@ -1,12 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 import '../styles/Market.css'; // Assuming you have a separate CSS file for styling
 
 const Market = () => {
-  const { ref: headingRef, inView: headingInView } = useInView({ triggerOnce: true });
-  const { ref: contentRef, inView: contentInView } = useInView({ triggerOnce: true });
-
   const headingVariants = {
     hidden: { opacity: 0, y: -50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
@@ -20,10 +16,10 @@ const Market = () => {
   return (
     <div className="market-container">
       <motion.div
-        ref={headingRef}
         className="heading-container"
         initial="hidden"
-        animate={headingInView ? 'visible' : 'hidden'}
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
         variants={headingVariants}
       >
         <h1 className="market-heading">We Market Your Home to The World</h1>
@@ -35,10 +31,10 @@ const Market = () => {
       </motion.div>
 
       <motion.div
-        ref={contentRef}
         className="content"
         initial="hidden"
-        animate={contentInView ? 'visible' : 'hidden'}
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
         variants={contentVariants}
       >
         <motion.div className="column" variants={contentVariants}>

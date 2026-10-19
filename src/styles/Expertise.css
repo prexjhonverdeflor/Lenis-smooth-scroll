@@ -3,9 +3,13 @@
 .expertise-container {
   padding: 100px 200px;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns with proportional widths */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); /* minmax(0,...) prevents grid blowout from slick's inline widths */
   align-items: center; /* Center items vertically */
   background-color: #ebebeb;
+}
+
+.expertise-container > * {
+  min-width: 0;
 }
 
 h1 {
@@ -38,4 +42,34 @@ h1 {
   width: 100%; /* Ensure the image takes up the full width of its container */
   max-width: 100%; /* Prevent overflow */
   height: auto; /* Maintain aspect ratio */
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .expertise-container {
+    padding: 60px 60px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .expertise-container {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 50px 20px;
+    gap: 40px;
+  }
+
+  h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .text-section ul {
+    font-size: 15px;
+    padding-right: 0;
+  }
+
+  .expertise-carousel {
+    max-width: 100%;
+  }
 }

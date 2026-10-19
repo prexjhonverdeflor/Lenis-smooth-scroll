@@ -1,0 +1,28 @@
+.marquee-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+}
+
+.marquee-image {
+  margin: 0 40px;
+  height: 80px;
+  width: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .marquee-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .marquee-image {
+    margin: 0 20px;
+    height: 50px;
+  }
+}

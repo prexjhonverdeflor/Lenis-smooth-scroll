@@ -1,5 +1,6 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
+import '../styles/Marquee.css';
 
 const MarqueeComponent = () => {
   // List of image URLs or paths
@@ -13,21 +14,20 @@ const MarqueeComponent = () => {
   ];
 
   return (
-    <section style={{ paddingTop: '100px', paddingBottom: '100px' }}>
+    <section className="marquee-section">
       <Marquee
         gradient={true}
-        gradientColor="#f5f3ef" // Example gradient color
-        gradientWidth={200} // Width of the gradient on either side
+        gradientColor="#f5f3ef"
+        gradientWidth={200}
       >
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div className="marquee-track">
           {images.map((src, index) => (
-
-              <img
-                src={src}
-                alt={`Marquee Image ${index}`}
-                style={{ margin: '0 40px', height: '80px' }}
-              />
-
+            <img
+              key={index}
+              src={src}
+              alt={`Marquee Image ${index}`}
+              className="marquee-image"
+            />
           ))}
         </div>
       </Marquee>

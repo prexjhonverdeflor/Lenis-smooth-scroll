@@ -3,7 +3,7 @@
   position: fixed; /* Keeps navbar at the top */
   top: 0;
   left: 0;
-  z-index: 10; /* Ensure it's above other elements */
+  z-index: 1000; /* Must beat root-level z-index:99 elements (hero h1, service-text, process-item, text-overlay) */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,7 +11,7 @@
 }
 
 .navbar-logo img {
-  width: 150px;
+  width: 250px;
   display: block;
 }
 
@@ -53,4 +53,72 @@
 
 .navbar-links a:hover::after {
   transform: scaleX(1); /* Scale the underline to full width on hover */
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 101;
+  padding: 5px;
+}
+
+.navbar-overlay {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar-logo img {
+    width: 210px;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+  }
+
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background: #1a1a1a;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    transition: right 0.3s ease;
+    z-index: 100;
+    gap: 10px;
+  }
+
+  .navbar-links.open {
+    right: 0;
+  }
+
+  .navbar-links li {
+    margin: 12px 0;
+  }
+
+  .navbar-links a {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
 }

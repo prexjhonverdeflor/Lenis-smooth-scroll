@@ -43,6 +43,10 @@
   padding: 100px; /* Adjust padding as needed */
 }
 
+.text-container-padded {
+  padding-top: 50px;
+}
+
 
 
 .text-container h1 {
@@ -98,4 +102,55 @@ img {
 .benefits p:last-of-type {
   font-size: 0.9em; /* Adjust font size of the last paragraph if needed */
   font-style: italic; /* Optional: italicize the last paragraph for emphasis */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .gallery-container1,
+  .gallery-container2,
+  .gallery-container3 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text";
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .gallery-container2 {
+    grid-template-areas:
+      "text"
+      "image";
+  }
+
+  .gallery-container3 {
+    grid-template-areas:
+      "image"
+      "text";
+  }
+
+  .text-container {
+    padding: 30px 20px;
+  }
+
+  .text-container-padded {
+    padding-top: 30px;
+  }
+
+  .text-container h1 {
+    font-size: 24px;
+  }
+
+  .text-container p,
+  .benefits,
+  .benefits p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container h1 {
+    font-size: 20px;
+  }
 }

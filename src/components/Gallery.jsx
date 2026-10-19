@@ -54,7 +54,7 @@ const Gallery = () => {
           </div>
         </Reveal>
         <Reveal>
-          <div className="text-container" style={{ paddingTop: '50px'}}>
+          <div className="text-container text-container-padded">
             <h1>The Sample Company Communications Tablet</h1>
             <p>We have created this as a wonderful tool so that we can communicate with you daily, provide you with updates on what is happening with your home. We are available at the with a click of your tablet.</p>
 

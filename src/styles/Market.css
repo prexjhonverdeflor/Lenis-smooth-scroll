@@ -43,3 +43,46 @@
   line-height: normal;
   font-family: 'Poppins';
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .market-container {
+    padding: 0 40px;
+  }
+
+  .column {
+    padding: 0 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .market-container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    margin-bottom: 60px;
+    gap: 30px;
+  }
+
+  .market-heading {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .content {
+    grid-column: 1;
+  }
+
+  .column {
+    padding: 0;
+  }
+
+  .column-header {
+    font-size: 17px;
+  }
+
+  .column-description,
+  .heading-description {
+    font-size: 15px;
+  }
+}
